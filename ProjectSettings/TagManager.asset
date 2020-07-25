@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3712374359
+    locked: 0
   - name: Player
     uniqueID: 584805039
+    locked: 0
+  - name: Pickups
+    uniqueID: 3982539761
+    locked: 0
+  - name: Foreground
+    uniqueID: 21985483
     locked: 0
