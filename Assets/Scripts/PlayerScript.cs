@@ -8,6 +8,9 @@ public class PlayerScript : MonoBehaviour
     int health;
     int smallAmmo;
     int heavyAmmo;
+    
+    GameObject currentWeapon;
+    GameObject secondaryWeapon;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +26,18 @@ public class PlayerScript : MonoBehaviour
         
     }
 
+    
+
+    public void Equip(GameObject newWeapon){
+        currentWeapon = newWeapon;
+    }
+
+
     public void AddHealth(int amount){
         health += amount;
     }
 
-    public void SubHealth(int amount){
+    public void TakeDamage(int amount){
         health -= amount;
     }
 
